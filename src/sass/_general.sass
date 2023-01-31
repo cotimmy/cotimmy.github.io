@@ -1,0 +1,162 @@
+.container
+  max-width: 950px
+  margin: 0 auto
+
+.promo
+  min-height: 650px
+  padding: 21px 0 93px 0
+  background: url("/src/img/main.jpg") center (center/cover) no-repeat
+  &__wrapper
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin-top: 90px
+  &__header
+    color: #ffffff
+    font-size: 42px
+    font-weight: 400
+    font-style: normal
+    letter-spacing: normal
+    line-height: 42px
+    text-align: right
+    text-transform: uppercase
+  &__subheader
+    color: #ffffff
+    font-size: 24px
+    font-weight: 400
+    font-style: normal
+    letter-spacing: normal
+    line-height: 24px
+    text-align: right
+    text-transform: uppercase
+    margin-top: 17px
+  &__icons
+    margin-top: 65px
+    width: 425px
+    display: flex
+    justify-content: space-between
+  &__icon
+    width: 108px
+    text-align: center
+    color: #ffffff
+    font-size: 14px
+    font-weight: 500
+    font-style: normal
+    letter-spacing: normal
+    line-height: normal
+    img
+      display: block
+      margin: 0 auto
+      margin-bottom: 20px
+  &__link
+    color: #ffffff
+    font-size: 16px
+    font-weight: 500
+    font-style: normal
+    letter-spacing: normal
+    line-height: normal
+    text-align: right
+    margin-top: 18px
+    a
+      text-decoration: underline
+      text-transform: uppercase
+      color: white
+
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__logo
+    width: 250px
+    img
+      width: 100%
+
+  &__official
+    color: #ffffff
+    font-size: 12px
+    font-weight: 500
+    text-align: center
+    span
+      display: block
+      font-size: 18px
+  &__phone
+    display: block
+    color: #ffffff
+    font-size: 18px
+    font-weight: 700
+    font-style: normal
+    letter-spacing: normal
+    line-height: normal
+    text-align: right
+    margin-bottom: 5px
+    &:hover
+      color: white
+      text-decoration: none
+  &__contacts
+    display: flex
+    flex-direction: column //тут мы как раз сделали что бы кнопка встала под номер. Были блоки в строку. стали в столбец
+    align-items: flex-end // Вот тут выравниваем с конца так сказать. по правому краю, потому что смотрим с лево на право
+
+.button
+  width: 150px
+  height: 30px
+  border-radius: 5px
+  background-color: $main-color
+  border: none
+  color: #ffffff
+  font-size: 12px
+  font-weight: 400
+  text-align: center
+  text-transform: uppercase
+  &__main
+    width: 300px
+    height: 50px
+    margin-top: 68px
+    font-size: 16px
+    font-style: normal
+    letter-spacing: normal
+    line-height: normal
+    text-align: center
+
+.advantages
+  padding: 70px 0 80px 0
+  background-color: #f6f6f6
+  &__wrapper
+    margin-top: 65px
+    display: flex
+    justify-content: space-between
+
+  &__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 238px
+
+  &__subtitle
+    margin-top: 38px
+    color: #0d0d0d
+    font-size: 18px
+    font-weight: 700
+
+  &__descr
+    margin-top: 27px
+    color: #0d0d0d
+    font-size: 14px
+    font-weight: 301
+    text-align: center
+    a
+      color: #ff0000
+      text-decoration: underline
+  &__icon
+    &_animated
+      animation-name: heartbeat
+      animation-duration: 1s
+      animation-timing-function: ease
+      animation-iteration-count: infinite
+      &:hover
+        animation-play-state: paused
+
+.title
+  text-align: center
+
+
